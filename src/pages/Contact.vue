@@ -69,9 +69,9 @@ onMounted(() => {
 <template>
   <div class="content">
     <div class="container mx-auto">
-      <div class="max-w-2xl mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+      <div class="max-w-2xl mx-auto bg-white p-5 rounded-md shadow-sm">
         <div class="text-center">
-          <h1 class="my-3 text-3xl font-semibold text-black-700">Contact Us</h1>
+          <h1>Contact Us</h1>
           <p class="text-black-400">
             Fill up the form below to send us a message.
           </p>
@@ -190,6 +190,22 @@ onMounted(() => {
         </div>
       </div>
     </div>
+    <div class="address-phone">
+      <h2>Huntington Village Cooperative</h2>
+      <p>38 Nathan Hale Drive</p>
+      <p>Huntington, NY 11743</p>
+      <p>631-427-6099 (phone)</p>
+      <p>631-427-6130 (fax)</p>
+
+      <h2>Emergency call line</h2>
+      <p>
+        Emergency Call Line Our emergency call number is
+        <strong>1-800-684-4055</strong>. When calling in an emergency, please be
+        very specific and detailed. If the representative asks if this a true
+        emergency and you feel it is, please let them know that you exactly what
+        you need.
+      </p>
+    </div>
   </div>
 </template>
 
@@ -204,6 +220,10 @@ textarea {
   background: #fff;
 }
 
+.address-phone {
+  text-align: center;
+}
+
 .was-validated :placeholder-shown:invalid ~ .empty-feedback {
   display: block;
 }
@@ -215,5 +235,8 @@ textarea {
 .is-invalid,
 .was-validated :invalid {
   border-color: #dc3545;
+}
+h2 {
+  margin-top: 2rem;
 }
 </style>

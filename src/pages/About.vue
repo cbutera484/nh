@@ -3,7 +3,7 @@ import pool from "../assets/pool.jpeg";
 </script>
 <template>
   <div class="content">
-    <h1>Welcome to Huntington Village Cooperative Apartments</h1>
+    <h1>Welcome to the Huntington Village Cooperative Apartments</h1>
     <p>
       Nestled in the heart of historic Huntington and established in 1950,
       Huntington Village Cooperative Apartments offer an inviting blend of

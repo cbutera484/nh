@@ -1,23 +1,37 @@
 <script setup>
-import { ref } from "vue";
+import { useTemplateRef, watch } from "vue";
 
-const isOpen = ref(false);
-const emit = defineEmits(["open", "close"]);
+const emit = defineEmits(["hamburgerClicked"]);
+const props = defineProps({
+  isOpen: {
+    type: Boolean,
+    default: false,
+  },
+});
 
-function toggleMenu() {
-  isOpen.value = !isOpen.value;
-  const hamburger = document.getElementById("hamburger");
-  hamburger.classList.remove("initial");
-  if (isOpen.value) {
-    emit("open");
-    hamburger.classList.remove("is-closed");
-    hamburger.classList.add("is-open");
+function hamburgerClicked() {
+  emit("hamburgerClicked");
+}
+
+const hamburger = useTemplateRef("hamburger");
+
+function animateMenu() {
+  hamburger.value.classList.remove("initial");
+  if (props.isOpen) {
+    hamburger.value.classList.remove("is-closed");
+    hamburger.value.classList.add("is-open");
   } else {
-    emit("close");
-    hamburger.classList.remove("is-open");
-    hamburger.classList.add("is-closed");
+    hamburger.value.classList.remove("is-open");
+    hamburger.value.classList.add("is-closed");
   }
 }
+
+watch(
+  () => props.isOpen,
+  (newVal) => {
+    animateMenu();
+  }
+);
 </script>
 <template>
   <!--
@@ -26,7 +40,8 @@ article: https://raygun.io/blog/2014/07/making-svg-html-burger-button/
 
   <div
     id="hamburger"
-    @click="toggleMenu"
+    ref="hamburger"
+    @click="hamburgerClicked"
     class="block lg:hidden hamburglar is-closed initial"
   >
     <div class="burger-icon">

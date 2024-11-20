@@ -101,7 +101,7 @@ onMounted(() => {
               style="display: none"
             />
 
-            <div class="flex mb-6 space-x-4">
+            <div class="md:flex mb-6 md:space-x-4">
               <div class="w-full md:w-1/2">
                 <label for="fname" class="block mb-2 text-sm text-gray-600"
                   >First Name</label
@@ -139,7 +139,7 @@ onMounted(() => {
             </div>
 
             <div class="flex mb-6 space-x-4">
-              <div class="w-full md:w-1/2">
+              <div class="w-full lg:w-3/4">
                 <label for="email" class="block mb-2 text-sm text-gray-600"
                   >Email Address</label
                 >
@@ -191,15 +191,15 @@ onMounted(() => {
       </div>
     </div>
     <div class="address-phone">
-      <h2>Huntington Village Cooperative</h2>
+      <h2 class="text-base md:text-xl">Huntington Village Cooperative</h2>
       <p>38 Nathan Hale Drive</p>
       <p>Huntington, NY 11743</p>
-      <p>631-427-6099 (phone)</p>
-      <p>631-427-6130 (fax)</p>
+      <p><strong>631-427-6099</strong> (phone)</p>
+      <p><strong>631-427-6130</strong> (fax)</p>
 
       <h2>Emergency call line</h2>
-      <p>
-        Emergency Call Line Our emergency call number is
+      <p class="max-w-2xl text-left m-auto p-5">
+        Our emergency call number is
         <strong>1-800-684-4055</strong>. When calling in an emergency, please be
         very specific and detailed. If the representative asks if this a true
         emergency and you feel it is, please let them know that you exactly what

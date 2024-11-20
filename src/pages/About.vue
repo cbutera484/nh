@@ -3,7 +3,9 @@ import pool from "../assets/pool.jpeg";
 </script>
 <template>
   <div class="content">
-    <h1>Welcome to the Huntington Village Cooperative Apartments</h1>
+    <h1 class="text-base md:text-2xl lg:text-3xl">
+      Welcome to the Huntington Village Cooperative Apartments
+    </h1>
     <p>
       Nestled in the heart of historic Huntington and established in 1950,
       Huntington Village Cooperative Apartments offer an inviting blend of
@@ -14,7 +16,11 @@ import pool from "../assets/pool.jpeg";
       catch a live show at The Paramount theater—all without ever needing to get
       in the car.
     </p>
-    <img :src="pool" alt="pool" />
+    <img
+      :src="pool"
+      alt="pool"
+      class="md:float-right md:w-6/12 md:p-3 w-full h-auto"
+    />
     <p>
       For those looking for a sense of community, our cooperative frequently
       hosts social gatherings, including poolside get-togethers and seasonal
@@ -53,10 +59,7 @@ ul {
   list-style-type: disc;
   margin-left: 2rem;
 }
-img {
-  width: 50%;
-  height: 400px;
-  float: right;
-  padding: 1rem;
+p {
+  margin: 1rem 0;
 }
 </style>

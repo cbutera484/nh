@@ -6,13 +6,17 @@
       <li><strong>President</strong> – Camille Galella</li>
       <li><strong>Vice President</strong> – Caitlin Cagney</li>
       <li><strong>Treasurer</strong> – Carmine Rotolo</li>
-      <li><strong>Secretary</strong> – Chris Butera</li>
       <li><strong>Admissions</strong> – Lorraine Botti</li>
       <li><strong>Director</strong> – Joanne Abosch</li>
+      <li><strong>Secretary</strong> – Chris Butera</li>
       <li><strong>Secretary</strong> – Richard Fernandez</li>
     </ul>
-    <h2>Property Manager</h2>
-    <p>Ronni Osman</p>
+    <h2>Einseidler Management</h2>
+    <ul>
+      <li><strong>CEO</strong> - Don Einseidler</li>
+      <li><strong>Lawyer</strong> - Howard Sayetta</li>
+      <li><strong>Property Manager</strong> - Ronni Osman</li>
+    </ul>
   </div>
 </template>
 

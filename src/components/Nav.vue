@@ -15,12 +15,12 @@ function toggleMenu() {
 function open() {
   menu.value.classList.add("open");
   window.setTimeout(() => {
-    menu.value.style.opacity = 1;
+    menu.value.classList.add("opacity-100");
   }, 100);
   isOpen.value = true;
 }
 function close() {
-  menu.value.style.opacity = 0;
+  menu.value.classList.remove("opacity-100");
   menu.value.addEventListener(
     "transitionend",
     () => {
@@ -45,10 +45,13 @@ onMounted(() => {
 
 <template>
   <nav class="justify-between flex">
-    <h2>
+    <h2 class="text-xl xl:text-2xl">
       <router-link to="/">Huntington Village Cooperative</router-link>
     </h2>
-    <ul ref="menu" class="hidden lg:flex flex-row opacity-0 lg:opacity-100">
+    <ul
+      ref="menu"
+      class="hidden lg:flex flex-row opacity-0 lg:opacity-100 mt-2 text-sm xl:text-base"
+    >
       <li><router-link to="/about">About</router-link></li>
       <li><router-link to="/photo-gallery">Photo Gallery</router-link></li>
       <li><router-link to="/events">Upcoming Events</router-link></li>
@@ -72,23 +75,25 @@ nav {
 }
 ul {
   transition: opacity 0.5s ease-in-out;
-  opacity: 0;
 }
-ul.open {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: #fff;
-  width: 100%;
-  height: 100vh;
-  z-index: 100;
+@media (max-width: 1024px) {
+  ul.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+  }
+  ul.open li {
+    border-bottom: 1px solid var(--primary-color);
+    padding: 2rem 0;
+  }
 }
-ul.open li {
-  border-bottom: 1px solid var(--primary-color);
-  padding: 2rem 0;
-}
+
 ul li {
   padding: 0 1rem;
 }

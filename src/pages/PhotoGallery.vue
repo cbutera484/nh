@@ -114,15 +114,12 @@ const images = [
   <div class="content">
     <h1>Photo Gallery</h1>
 
-    <Gallery galleryID="gallery" :images="images" />
+    <Gallery
+      galleryID="gallery"
+      class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4"
+      :images="images"
+    />
   </div>
 </template>
 
-<style scoped>
-#gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem;
-}
-</style>
+<style scoped></style>

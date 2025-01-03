@@ -27,6 +27,10 @@ import image12 from "../assets/gallery12.jpeg";
 import image12thumbnail from "../assets/gallery12_thumbnail.jpg";
 import image13 from "../assets/gallery13.jpeg";
 import image13thumbnail from "../assets/gallery13_thumbnail.jpg";
+import image14 from "../assets/gallery14.jpeg";
+import image14thumbnail from "../assets/gallery14_thumbnail.jpg";
+import image15 from "../assets/gallery15.jpeg";
+import image15thumbnail from "../assets/gallery15_thumbnail.jpg";
 
 const images = [
   {
@@ -107,6 +111,18 @@ const images = [
     width: 810,
     height: 1080,
   },
+  {
+    largeURL: image14,
+    thumbnailURL: image14thumbnail,
+    width: 4284,
+    height: 5712,
+  },
+  {
+    largeURL: image15,
+    thumbnailURL: image15thumbnail,
+    width: 3024,
+    height: 4032,
+  },
 ];
 </script>
 
@@ -121,5 +137,3 @@ const images = [
     />
   </div>
 </template>
-
-<style scoped></style>

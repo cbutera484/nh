@@ -180,7 +180,7 @@ onMounted(() => {
             <div class="mb-6">
               <button
                 type="submit"
-                class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
+                class="w-full px-3 py-4 text-white rounded-md focus:outline-none"
               >
                 Send Message
               </button>
@@ -210,6 +210,8 @@ onMounted(() => {
 </template>
 
 <style scoped>
+@use "../assets/css/variables.scss";
+
 .invalid-feedback,
 .empty-feedback {
   display: none;
@@ -238,5 +240,11 @@ textarea {
 }
 h2 {
   margin-top: 2rem;
+}
+button {
+  background: var(--primary-color);
+}
+button:hover {
+  background: #92a02d;
 }
 </style>

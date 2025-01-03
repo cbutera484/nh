@@ -20,15 +20,17 @@ function open() {
   isOpen.value = true;
 }
 function close() {
-  menu.value.classList.remove("opacity-100");
-  menu.value.addEventListener(
-    "transitionend",
-    () => {
-      menu.value.classList.remove("open");
-    },
-    { once: true }
-  );
-  isOpen.value = false;
+  if (menu.value?.classList.contains("open")) {
+    menu.value.classList.remove("opacity-100");
+    menu.value.addEventListener(
+      "transitionend",
+      () => {
+        menu.value.classList.remove("open");
+      },
+      { once: true }
+    );
+    isOpen.value = false;
+  }
 }
 
 import { onMounted } from "vue";
@@ -76,6 +78,7 @@ nav {
 ul {
   transition: opacity 0.5s ease-in-out;
 }
+
 @media (max-width: 1024px) {
   ul.open {
     display: flex;

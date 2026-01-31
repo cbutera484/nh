@@ -90,7 +90,7 @@ article: https://raygun.io/blog/2014/07/making-svg-html-burger-button/
 <style lang="scss" scoped>
 @use "../assets/css/variables.scss";
 $animation: 0.6s;
-$scale: 1;
+$scale: 0.8;
 
 *,
 *:before,

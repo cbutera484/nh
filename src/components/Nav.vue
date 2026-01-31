@@ -57,7 +57,7 @@ onMounted(() => {
       <li><router-link to="/about">About</router-link></li>
       <li><router-link to="/photo-gallery">Photo Gallery</router-link></li>
       <li><router-link to="/events">Upcoming Events</router-link></li>
-      <li><router-link to="/management">Management</router-link></li>
+
       <li><router-link to="/info">Useful Info</router-link></li>
       <li><router-link to="/contact">Contact Us</router-link></li>
     </ul>
@@ -93,7 +93,14 @@ ul {
   }
   ul.open li {
     border-bottom: 1px solid var(--primary-color);
+    padding: 0;
+  }
+
+  ul.open li a {
     padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 }
 

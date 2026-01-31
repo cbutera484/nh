@@ -5,14 +5,13 @@ import pool from "../assets/pool.jpeg";
   <div class="content">
     <h1>Welcome to the Huntington Village Cooperative Apartments</h1>
     <p>
-      Nestled in the heart of historic Huntington and established in 1950,
-      Huntington Village Cooperative Apartments offer an inviting blend of
-      comfort, convenience, and charm. Located within walking distance of
-      Huntington’s vibrant downtown, our community places you just steps away
-      from some of the finest dining, shopping, and nightlife Long Island has to
-      offer. Savor a meal at a top-tier restaurant, unwind at a local bar, or
-      catch a live show at The Paramount theater—all without ever needing to get
-      in the car.
+      Nestled in the heart of historic Huntington, Huntington Village
+      Cooperative Apartments offer an inviting blend of comfort, convenience,
+      and charm. Located within walking distance of Huntington’s vibrant
+      downtown, our community places you just steps away from some of the finest
+      dining, shopping, and nightlife Long Island has to offer. Savor a meal at
+      a top-tier restaurant, unwind at a local bar, or catch a live show at The
+      Paramount theater—all without ever needing to get in the car.
     </p>
     <img
       :src="pool"
@@ -45,7 +44,6 @@ import pool from "../assets/pool.jpeg";
       <li>Available garage parking</li>
       <li>Private parking lots and ample street parking</li>
       <li>On-site Laundry Facilities</li>
-      <li>Playground(?)</li>
     </ul>
 
     <p></p>

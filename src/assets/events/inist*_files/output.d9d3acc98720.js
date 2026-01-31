@@ -1,0 +1,1 @@
+if(((navigator.userAgent.indexOf('iPhone')!=-1)||(navigator.userAgent.indexOf('iPad')!=-1)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1))&&!window.MSStream&&window.location.pathname.indexOf("/discover")===-1){document.write('<meta name="viewport" content="width=device-width" />');};

@@ -1,0 +1,28 @@
+@import url(../../css/twemoji-sprite-1.css?f1f24fe0d99b);
+@import url(../../css/twemoji-sprite-2.css?f215bebda57f);
+@import url(../../css/twemoji-sprite-3.css?f49289dba297);
+.sprite-twemoji {
+  zoom: 0.75;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%) scale(0.75); }
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.05em;
+  vertical-align: -0.1em; }
+
+img.emojiButton {
+  height: 1em;
+  width: 1em;
+  vertical-align: text-bottom; }
+
+img.emojiToneChoice {
+  height: 1em;
+  width: 1em; }
+
+img.emojiChat {
+  height: 1.1em;
+  width: 1.1em;
+  margin: 0 0.05em 0 0.05em;
+  vertical-align: -0.1em; }

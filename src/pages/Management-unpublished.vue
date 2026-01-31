@@ -9,13 +9,16 @@
       <li><strong>Admissions</strong> – Lorraine Botti</li>
       <li><strong>Director</strong> – Joanne Abosch</li>
       <li><strong>Secretary</strong> – Chris Butera</li>
-      <li><strong>Secretary</strong> – Richard Fernandez</li>
+      <li><strong>Director</strong> – Richard Fernandez</li>
     </ul>
-    <h2>Einseidler Management</h2>
+    <h2>Einsidler Management</h2>
     <ul>
-      <li><strong>CEO</strong> - Don Einseidler</li>
-      <li><strong>Lawyer</strong> - Howard Sayetta</li>
+      <li><strong>CEO</strong> - Don Einsidler</li>
       <li><strong>Property Manager</strong> - Ronni Osman</li>
+    </ul>
+    <h2>Legal</h2>
+    <ul>
+      <li><strong>Lawyer</strong> - Howard E. Sayetta</li>
     </ul>
   </div>
 </template>
